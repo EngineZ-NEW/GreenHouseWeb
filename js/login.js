@@ -13,7 +13,7 @@ function signIn() {
     const password = document.getElementById('password').value;
 
     for(let i = 0; i < objPeople.length; i++) {
-        if(usernameOrEmail === (objPeople[i].email || objPeople[i].username) && password === objPeople[i].password) {
+        if((usernameOrEmail === (objPeople[i].email)) || (usernameOrEmail === (objPeople[i].username)) && password === objPeople[i].password) {
             window.location.href="devices.html"
             return
         }
