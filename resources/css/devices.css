@@ -133,6 +133,7 @@ nav a:hover::before {
 }
 
 .button input{
+    max-width: 510px;
     margin: 2em 0;
     font-family: 'Poppins', sans-serif;
     height: 100%;
@@ -147,7 +148,6 @@ nav a:hover::before {
     background: #0F0260;
 }
 .button input:hover{
-    /* transform: scale(0.99); */
     background: #9b59b6;
 }
 
