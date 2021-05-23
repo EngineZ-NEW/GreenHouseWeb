@@ -1,23 +1,22 @@
 let objPeople = [
     {
+        name: "Nazar Dzhura",
         username: "nazardzhura",
+        email: "nazar_dzhura@ukr.net",
+        phone: "380632071464",
         password: "45synth"
-    },
-    {
-        username: "exampleuser1",
-        password: "12345"
     }
 ]
 
-function getInfo() {
+function signIn() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     for(let i = 0; i < objPeople.length; i++) {
         if(username === objPeople[i].username && password === objPeople[i].password) {
-            console.log(username + " has been logged in")
+            window.location.href="home.html"
             return
         }
     }
-    console.log("Incorrect username or password.")
+    document.getElementById("error").innerHTML = "Wrong username or password."
 }

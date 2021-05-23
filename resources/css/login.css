@@ -56,7 +56,50 @@ a{
     margin-left: 1em;
 }
 
+#error {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: red;
+    margin-top: 1em;
+}
+
 #signIn {
     font-family: 'Poppins', sans-serif;
     margin-top: 2em;
+}
+
+#signIn input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #0F0260;
+}
+
+#signIn input:hover{
+    /* transform: scale(0.99); */
+    background: #9b59b6;
+}
+
+.input-box {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid{
+    border-color: #9b59b6;
 }
