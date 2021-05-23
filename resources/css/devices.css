@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333333;
+}
+
+header {
+    background:  rgba(0,0,0,0.03);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    margin-bottom: 5em;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#icon {
+    position: absolute;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+#logout {
+    color: red;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo #icon {
+    width: 5em;
+    height: auto;
+    display: block;
+    margin: 0.5em auto;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #0F0260;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #0F0260;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 2em;
+
+}
+.box h3 {
+    font-size: 2em;
+    color: #0F0260;
+}
+
+.box p {
+    color: #333333;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box div {
+    align-self: center;
+    max-width: 450px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.03);
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+}
+
+.box div:hover {
+    background-color: rgba(0,0,0,0.1);
+
+}
+
+.button input{
+    max-width: 510px;
+    margin: 2em 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 33.333%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: #0F0260;
+}
+.button input:hover{
+    background: #9b59b6;
+}
+
+@media(max-width: 1000px) {
+    #icon {
+        visibility: hidden;
+    }
+}
