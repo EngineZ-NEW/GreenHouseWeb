@@ -9,14 +9,14 @@ let objPeople = [
 ]
 
 function signIn() {
-    const username = document.getElementById('username').value;
+    const usernameOrEmail = document.getElementById('usernameOrEmail').value;
     const password = document.getElementById('password').value;
 
     for(let i = 0; i < objPeople.length; i++) {
-        if(username === objPeople[i].username && password === objPeople[i].password) {
-            window.location.href="home.html"
+        if(usernameOrEmail === (objPeople[i].email || objPeople[i].username) && password === objPeople[i].password) {
+            window.location.href="devices.html"
             return
         }
     }
-    document.getElementById("error").innerHTML = "Wrong username or password."
+    document.getElementById("error").innerHTML = "Wrong username or password"
 }
