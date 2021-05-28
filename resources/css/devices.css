@@ -81,6 +81,7 @@ nav a:hover {
     color: #0F0260;
 }
 
+
 nav a::before {
     content: '';
     display: block;
@@ -93,6 +94,7 @@ nav a::before {
 
     transition: all ease-in-out 250ms;
 }
+
 
 nav a:hover::before {
     width: 100%;
