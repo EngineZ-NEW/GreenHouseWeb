@@ -14,7 +14,7 @@ function signIn() {
 
     for(let i = 0; i < objPeople.length; i++) {
         if((usernameOrEmail === (objPeople[i].email)) || (usernameOrEmail === (objPeople[i].username)) && password === objPeople[i].password) {
-            window.location.href="devices.html"
+            window.location.href="home.html"
             return
         }
     }
