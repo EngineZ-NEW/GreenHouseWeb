@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  font-family: sans-serif;
+  height: 30vh;
+}
+
+.registration_box {
+  width: 320px;
+  height: 420px;
+  background: #ffffff;
+  color: #320b70;
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.leaves {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  left: 25px;
+  top: 25px;
+}
+
+.registration_box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+  color: #0F0260;
+  position: relative;
+  left: 10px;
+  font-size: 13px;
+}
+
+.registration_box h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+  color: #000000;
+  position: relative;
+  right: 30px;
+  top: -10px;
+  font-size: 40px;
+  width: 400px;
+}	
+
+.registration_box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registration_box input[type="create_username"], .registration_box input[type="email"], .registration_box input[type="password"], .registration_box input[type="confirm"] {
+  border: 2px solid #000000;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color: #030202;
+  font-size: 13px;
+  border-radius: 10px;
+
+}
+
+.registration_box input[type="submit"] {
+
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 268px;
+  background: #320b70;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  position: relative;
+  left: 0px;
+  top: -2px;
+
+}
+
+.registration_box input[type="submit"]:hover {
+
+  cursor: pointer;
+  background: #e3e3e3;
+  color: #000;
+
+}
+
+.registration_box a {
+  padding-bottom: 0px;
+  font-size: 30px;
+  line-height: 30px;
+  color: black;
+  position: relative;
+  height: 30px;
+  left: 105px;
+}
+
+.registration_box a:hover  {
+  cursor: pointer;
+  color: #e3e3e3;
+
+}
